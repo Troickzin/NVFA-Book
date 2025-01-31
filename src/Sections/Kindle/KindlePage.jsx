@@ -15,7 +15,9 @@ export default function KindlePage() {
             className="object-cover xl:hidden"
           />
           <Kindle className="max-xl:ml-auto max-xl:mr-auto" />
-          <Button type="red">Disponível no Kindle</Button>
+          <Button type="red" className="xl:hidden">
+            Disponível no Kindle
+          </Button>
           <div className="flex flex-col items-center gap-9 ml-auto mr-40 max-xl:hidden">
             <h2 className="text-2xl font-bold">Também disponível em ebook</h2>
 
