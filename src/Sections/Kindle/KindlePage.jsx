@@ -6,7 +6,7 @@ export default function KindlePage() {
   return (
     <>
       <section className="w-screen h-full text-dark-100 pt-40 pb-40 max-xl:pt-10 max-xl:pb-20 overflow-x-hidden">
-        <div className="flex max-xl:flex-col items-center justify-center max-xl:pl-20 max-xl:pr-20 max-xl:gap-6">
+        <div className="flex max-xl:flex-col items-center justify-center max-xl:pl-20 max-xl:pr-20 max-xl:gap-6 max-w-[1920px] m-auto">
           <Image
             src="/images/amazon.png"
             width={120}
