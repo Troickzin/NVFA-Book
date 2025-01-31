@@ -1,21 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alexandria:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --white-50: #E6E6E6;
+  --white-100: #F5EDD9;
+  --white-200: #CBCBCB;
+  --white-300: #b3b3b3;
+
+  --dark-50: #171717;
+  --dark-100: #212121;
+  --dark-200: #161616;
+
+  --eft-blue: #207485;
+  --eft-red: #520F13;
+  --eft-yellow: #F5C718;
+  --eft-yellow-hover: #d1ab14;
+  --eft-yellow-active: #e6c74b;
+  --book-animation: book_animation 16s infinite;
+  --kindle-animation: kindle_animation 16s infinite;
+  --bg-detail-animation: bg_detail_animation 60s infinite;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white-50);
+  background: var(--white-100);
+  font-family: "ABeeZee", serif;
+}
+
+@keyframes book_animation {
+
+  0%, 100% {
+    rotate: 1deg;
+  }
+
+  50% {
+    rotate: 3deg;
+  }
+  
+}
+
+@keyframes bg_detail_animation {
+
+  0%, 100% {
+    background-position-y: 50%;
+  }
+
+  50% {
+    background-position-y: 55%;
+  }
+  
+}
+
+@keyframes kindle_animation {
+
+  0%, 100% {
+    rotate: 1deg;
+  }
+
+  50% {
+    rotate: -2deg;
+  }
+  
 }
