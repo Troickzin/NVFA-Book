@@ -14,10 +14,17 @@
   --dark-50: #171717;
   --dark-100: #212121;
   --dark-200: #161616;
+  --dark-300: #33323A;
 
   --eft-blue: #207485;
   --eft-red: #520F13;
+  
+  --eft-red-button: #D73B3C;
+  --eft-red-button-hover: #b12424;
+  --eft-red-button-active: #e45353;
+
   --eft-yellow: #F5C718;
+  --eft-yellow-100: #F5C718;
   --eft-yellow-hover: #d1ab14;
   --eft-yellow-active: #e6c74b;
   --book-animation: book_animation 16s infinite;

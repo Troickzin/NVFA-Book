@@ -4,7 +4,7 @@ export default function Kindle(props) {
   return (
     <>
       <div
-        className={`${props.className} mr-auto ml-24 animate-kindle-animation`}
+        className={`mr-auto ml-24 animate-kindle-animation ${props.className}`}
       >
         <Image
           src="/images/kindle.png"

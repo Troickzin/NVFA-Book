@@ -20,10 +20,17 @@ export default {
         "dark-50": "var(--dark-50)",
         "dark-100": "var(--dark-100)",
         "dark-200": "var(--dark-200)",
+        "dark-300": "var(--dark-300)",
 
         "eft-blue": "var(--eft-blue)",
+        
         "eft-red": "var(--eft-red)",
+        "eft-red-button": "var(--eft-red-button)",
+        "eft-red-button-hover": "var(--eft-red-button-hover)",
+        "eft-red-button-active": "var(--eft-red-button-active)",
+        
         "eft-yellow": "var(--eft-yellow)",
+        "eft-yellow-100": "var(--eft-yellow-100)",
         "eft-yellow-hover": "var(--eft-yellow-hover)",
         "eft-yellow-active": "var(--eft-yellow-active)",
       },

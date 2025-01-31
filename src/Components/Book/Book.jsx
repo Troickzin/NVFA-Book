@@ -1,9 +1,11 @@
 import Image from "next/image";
 
-export default function Book() {
+export default function Book(props) {
   return (
     <>
-      <div className="absolute bottom-0 right-0 overflow-hidden translate-x-8 rotate-1 transition-all animate-book-animation">
+      <div
+        className={`absolute ${props.className} bottom-0 right-0 overflow-hidden xl:translate-x-8 rotate-1 transition-all animate-book-animation`}
+      >
         <Image
           src="/images/book.png"
           width={602}

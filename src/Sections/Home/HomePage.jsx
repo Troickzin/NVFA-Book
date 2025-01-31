@@ -1,4 +1,5 @@
 import Book from "@/Components/Book/Book";
+import Button from "@/Components/Button/Button";
 import Page_Details from "@/Components/Page_Details/Page_Details";
 import Title from "@/Components/Title/Title";
 
@@ -6,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <section className="w-screen h-fit relative" id="home">
-        <div className="bg-eft-blue w-full h-[75vh] absolute top-0 left-0">
+        <div className="bg-eft-blue w-full h-[75vh] max-xl:h-[95%] max-xl:min-h-screen absolute top-0 left-0">
           <div
             className="w-full h-full animate-bg-detail-animation"
             style={{
@@ -20,12 +21,18 @@ export default function HomePage() {
         </div>
 
         <div className="w-screen h-fit relative">
-          <div className="w-fit pt-40 ml-10 max-2xl:pt-32 max-2xl:ml-0 flex flex-col justify-center items-center gap-10 transition-all relative">
+          <div className="w-fit pt-40 ml-10 max-2xl:pt-32 max-2xl:ml-0 max-xl:pt-16 flex flex-col justify-center gap-10 max-xl:gap-0 items-center transition-all relative max-xl:m-auto">
             <Title />
+            <div className="w-full h-fit overflow-hidden">
+              <Book className="xl:hidden relative" />
+            </div>
+            <Button className="xl:hidden bg-eft-red-button">
+              Compre o livro
+            </Button>
             <Page_Details />
           </div>
         </div>
-        <div className="absolute w-full h-screen top-0 left-0 overflow-hidden">
+        <div className="absolute w-full h-screen top-0 left-0 overflow-hidden max-xl:hidden">
           <Book />
         </div>
       </section>
