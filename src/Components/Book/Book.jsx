@@ -6,7 +6,7 @@ export default function Book(props) {
       <div
         className={`absolute ${props.className} bottom-0 right-0 overflow-hidden xl:translate-x-8 rotate-1 transition-all animate-book-animation`}
       >
-        <Image
+        <img
           src="/images/book.png"
           width={602}
           height={874}
