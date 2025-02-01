@@ -25,6 +25,7 @@ export default {
         "eft-blue": "var(--eft-blue)",
         
         "eft-red": "var(--eft-red)",
+        "eft-red-100": "var(--eft-red-100)",
         "eft-red-button": "var(--eft-red-button)",
         "eft-red-button-hover": "var(--eft-red-button-hover)",
         "eft-red-button-active": "var(--eft-red-button-active)",
