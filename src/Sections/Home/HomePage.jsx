@@ -21,19 +21,23 @@ export default function HomePage() {
         </div>
 
         <div className="w-screen h-fit relative">
-          <div className="w-fit pt-40 ml-10 max-2xl:pt-32 max-2xl:ml-0 max-xl:pt-16 flex flex-col justify-center gap-10 max-xl:gap-0 items-center transition-all relative max-xl:m-auto">
-            <Title />
-            <div className="w-full h-fit overflow-hidden">
-              <Book className="xl:hidden relative" />
+          <div className="m-auto max-w-[1920px] relative">
+            <div className="w-fit pt-40 ml-10 max-2xl:pt-32 max-2xl:ml-0 max-xl:pt-16 flex flex-col justify-center gap-10 max-xl:gap-0 items-center transition-all relative max-xl:m-auto">
+              <Title />
+              <div className="w-full h-fit overflow-hidden">
+                <Book className="xl:hidden relative" />
+              </div>
+              <Button className="xl:hidden bg-eft-red-button">
+                Compre o livro
+              </Button>
+              <Page_Details />
             </div>
-            <Button className="xl:hidden bg-eft-red-button">
-              Compre o livro
-            </Button>
-            <Page_Details />
           </div>
         </div>
         <div className="absolute w-full h-screen top-0 left-0 overflow-hidden max-xl:hidden">
-          <Book />
+          <div className="m-auto max-w-[1920px] h-screen overflow-hidden relative">
+            <Book />
+          </div>
         </div>
       </section>
     </>
