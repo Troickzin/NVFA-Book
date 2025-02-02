@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
 
           <div className="grid gap-7 h-fit max-xl:hidden">
-            <p className="font-bold">Navigation</p>
+            <p className="font-bold">Navegação</p>
             <ul className="grid gap-5">
               <li>
                 <a href="#home">Home</a>
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div className="grid gap-7 h-fit max-xl:hidden">
-            <p className="font-bold">Contact</p>
+            <p className="font-bold">Contato</p>
             <p>contato@naovamosfalardeamor.com.br</p>
           </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
                 name="email-input"
                 id="email-input"
                 className="bg-white text-black placeholder:text-black text-base rounded-l-2xl w-64 pl-4 outline-hidden"
-                placeholder="Email Address"
+                placeholder="Endereço Email"
               />
               <button className="bg-eft-yellow rounded-r-2xl h-14 w-11 flex justify-center items-center active:bg-eft-yellow-hover transition-all">
                 <IoSend />
