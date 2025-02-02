@@ -37,7 +37,7 @@ layer(base);
   --animate-book-hover-animation: book_hover_animation 16s infinite;
   --animate-kindle-animation: kindle_animation 16s infinite;
   --animate-bg-detail-animation: bg_detail_animation 60s infinite;
-  
+
 }
 
 @layer base {

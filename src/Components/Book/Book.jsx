@@ -11,7 +11,7 @@ export default function Book(props) {
           width={602}
           height={874}
           alt="book image"
-          className="object-cover w-[56vh] h-[80vh] max-lg:w-[60vh] max-lg:h-[60vh] hover:transform-[rotate(6deg)] transition-all duration-500"
+          className="object-cover w-[56vh] h-[80vh] max-lg:w-[60vh] max-lg:h-[60vh] hover:transform-[rotate(6deg)] transition-all duration-500 "
         />
       </div>
     </>
