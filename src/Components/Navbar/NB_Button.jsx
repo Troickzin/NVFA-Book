@@ -3,8 +3,15 @@ export default function NB_Button({ children, ...props }) {
   return (
     <a
       href={props.link}
-      className="bg-transparent font-normal p-10 pt-5 pb-5 max-2xl:pb-3 max-2xl:pt-3 rounded-full text-nowrap 
-      hover:bg-white-100 hover:text-eft-red hover:font-bold transition-all duration-300 active:scale-95 active:bg-white-200 active:duration-150"
+      className="
+      bg-transparent font-normal p-5 hover:p-7 hover:pb-4 hover:pt-4 pt-4 pb-4 max-2xl:pb-3 max-2xl:pt-3 rounded-full text-nowrap relative text-gray-200 hover:text-white transition-all
+      before:contents-[''] before:content before:mr-2 before:bg-transparent before:absolute before:bottom-2 before:left-1/2 before:duration-300
+      before:w-0 before:h-0.5 before:transition-all
+      hover:before:-bottom-0 hover:before:bg-white hover:before:w-full
+      before:-translate-y-1/2 hover:before:-translate-y-0 hover:before:left-0
+      active:before:bg-eft-blue-100
+      active:before:w-[50%]
+      "
     >
       {children}
     </a>

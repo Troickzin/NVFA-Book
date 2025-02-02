@@ -1,1 +1,1 @@
-ado ado quem leu e viado
+Website do livro Não vamos falar de amor

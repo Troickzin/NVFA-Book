@@ -23,6 +23,11 @@ export default {
         "dark-300": "var(--dark-300)",
 
         "eft-blue": "var(--eft-blue)",
+        "eft-blue-100": "var(--eft-blue-100)",
+        "eft-blue-200": "var(--eft-blue-200)",
+        "eft-blue-300": "var(--eft-blue-300)",
+        "eft-blue-400": "var(--eft-blue-400)",
+        "eft-blue-500": "var(--eft-blue-500)",
         
         "eft-red": "var(--eft-red)",
         "eft-red-100": "var(--eft-red-100)",

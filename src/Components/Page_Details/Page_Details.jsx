@@ -3,7 +3,9 @@ import Image from "next/image";
 export default function Page_Details({ children, ...props }) {
   return (
     <>
-      <div className={`${props.className} relative text-dark-100 max-xl:mt-10`}>
+      <div
+        className={`${props.className} relative text-dark-100 max-xl:mt-10 z-30`}
+      >
         <Image
           src="/images/page.png"
           width={743}
