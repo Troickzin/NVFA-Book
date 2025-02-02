@@ -4,7 +4,7 @@ export default function Kindle(props) {
   return (
     <>
       <div
-        className={`mr-auto ml-24 animate-kindle-animation ${props.className}`}
+        className={`mr-auto ml-24 animate-kindle-animation ${props.className}  hover:transform-[rotate(-6deg)] transition-all duration-500`}
       >
         <img
           src="/images/kindle.png"

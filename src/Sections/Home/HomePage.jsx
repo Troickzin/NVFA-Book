@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <section className="w-screen h-fit relative" id="home">
-        <div className="bg-gradient-to-b from-eft-blue to-eft-blue-400 w-full h-[75vh] max-xl:h-[95%] max-xl:min-h-screen absolute top-0 left-0">
+        <div className="bg-linear-to-b from-eft-blue to-eft-blue-400 w-full h-[75vh] max-xl:h-[95%] max-xl:min-h-screen absolute top-0 left-0">
           <div
             className="w-full h-full animate-bg-detail-animation"
             style={{

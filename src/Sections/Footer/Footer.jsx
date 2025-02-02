@@ -50,12 +50,12 @@ export default function Footer() {
 
           <div className="grid gap-7 h-fit max-xl:hidden">
             <p className="font-bold">Inscreva-se no meu mailing</p>
-            <div className="h-fit w-fit flex has-[:focus-within]:scale-105 has-[:active]:scale-100 has-[:focus-within]:shadow-xl rounded-2xl transition-all">
+            <div className="h-fit w-fit flex has-focus-within:scale-105 has-active:scale-100 has-focus-within:shadow-xl rounded-2xl transition-all">
               <input
                 type="email"
                 name="email-input"
                 id="email-input"
-                className="bg-white text-black placeholder:text-black text-base rounded-l-2xl w-64 pl-4 outline-none"
+                className="bg-white text-black placeholder:text-black text-base rounded-l-2xl w-64 pl-4 outline-hidden"
                 placeholder="Email Address"
               />
               <button className="bg-eft-yellow rounded-r-2xl h-14 w-11 flex justify-center items-center active:bg-eft-yellow-hover transition-all">

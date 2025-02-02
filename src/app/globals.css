@@ -1,47 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alexandria:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Alexandria:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
+@theme {
 
-  --white-50: #E6E6E6;
-  --white-100: #F5EDD9;
-  --white-200: #CBCBCB;
-  --white-300: #b3b3b3;
+  --color-white-50: #E6E6E6;
+  --color-white-100: #F5EDD9;
+  --color-white-200: #CBCBCB;
+  --color-white-300: #b3b3b3;
+  --color-dark-50: #171717;
+  --color-dark-100: #212121;
+  --color-dark-200: #161616;
+  --color-dark-300: #33323A;
 
-  --dark-50: #171717;
-  --dark-100: #212121;
-  --dark-200: #161616;
-  --dark-300: #33323A;
+  --color-eft-blue: #207485;
 
-  --eft-blue: #207485;
-
-  --eft-blue-100: #3db6ce;
-  --eft-blue-200: #27a2bb;
-  --eft-blue-300: #158aa1;
-  --eft-blue-400: #217c8f;
-  --eft-blue-500: #0c5463;
+  --color-eft-blue-100: #3db6ce;
+  --color-eft-blue-200: #27a2bb;
+  --color-eft-blue-300: #158aa1;
+  --color-eft-blue-400: #217c8f;
+  --color-eft-blue-500: #0c5463;
   
-  --eft-red: #520F13;
-  --eft-red-100: #1F0000;
-  --eft-red-button: #D73B3C;
-  --eft-red-button-hover: #b12424;
-  --eft-red-button-active: #e45353;
+  --color-eft-red: #520F13;
+  --color-eft-red-100: #1F0000;
+  --color-eft-red-button: #D73B3C;
+  --color-eft-red-button-hover: #b12424;
+  --color-eft-red-button-active: #e45353;
 
-  --eft-yellow: #F5C718;
-  --eft-yellow-100: #F5C718;
-  --eft-yellow-hover: #d1ab14;
-  --eft-yellow-active: #e6c74b;
-  --book-animation: book_animation 16s infinite;
-  --kindle-animation: kindle_animation 16s infinite;
-  --bg-detail-animation: bg_detail_animation 60s infinite;
+  --color-eft-yellow: #F5C718;
+  --color-eft-yellow-100: #F5C718;
+  --color-eft-yellow-hover: #d1ab14;
+  --color-eft-yellow-active: #e6c74b;
+
+  --animate-book-animation: book_animation 16s infinite;
+  --animate-book-hover-animation: book_hover_animation 16s infinite;
+  --animate-kindle-animation: kindle_animation 16s infinite;
+  --animate-bg-detail-animation: bg_detail_animation 60s infinite;
+  
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
 body {
-  color: var(--white-50);
-  background: var(--white-100);
+  color: var(--color-white-50);
   font-family: "ABeeZee", serif;
 }
 
@@ -53,6 +63,18 @@ body {
 
   50% {
     rotate: 3deg;
+  }
+  
+}
+
+@keyframes book_hover_animation {
+
+  0%, 100% {
+    rotate: 4deg;
+  }
+
+  50% {
+    rotate: 8deg;
   }
   
 }

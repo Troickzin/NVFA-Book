@@ -1,4 +1,5 @@
 "use client";
+
 export default function AutoraPage() {
   return (
     <>
@@ -34,7 +35,13 @@ export default function AutoraPage() {
               Baiana, publicitária, designer UX e escritora. Está lançando o seu
               primeiro romance intitulado “Não Vamos Falar de Amor”.
             </p>
-            <button className="border p-16 pt-4 pb-4 border-white rounded-full transition-all text-xl flex w-fit">
+            <button
+              className="
+            border p-16 pt-4 pb-4 border-white rounded-full transition-all text-xl flex w-fit transition-all cursor-pointer
+            hover:scale-105
+            active:scale-95
+            "
+            >
               Siga o meu perfil na amazon
             </button>
           </div>
@@ -44,7 +51,7 @@ export default function AutoraPage() {
               alt="autora image"
               width={378}
               height={392}
-              className="object-cover w-80 h-80 min-w-64 min-h-64"
+              className="object-cover w-80 h-80 min-w-64 min-h-64 transition-all rounded-md hover:rounded-2xl"
             />
           </div>
         </div>
